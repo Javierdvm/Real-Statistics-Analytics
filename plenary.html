@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>About the project</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="mystyle.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Real Business Analytics</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="plenary.html">The Project</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Case Studies
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="courseRBA_1.html">R and Rmarkdown</a>
+    </li>
+    <li>
+      <a href="courseRBA_2.html">Recommender Systems</a>
+    </li>
+    <li>
+      <a href="courseRBA_3.html">Indicators</a>
+    </li>
+    <li>
+      <a href="shortcourse_fosr.html">Stress Test</a>
+    </li>
+    <li>
+      <a href="shortcourse_other.html">Clustering</a>
+    </li>
+    <li>
+      <a href="shortcourse_other2.html">Multiple System Estimation</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="https://github.com/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">About the project</h1>
+
+</div>
+
+
+<p>The main reasons to embark on this Project are: (1) the wrong idea students have in relation to Statistics, as they frequently associate it to a set of theoretical results without real application; (2) the necessity to implement educational cohesion measures between related subjects that would allow the student to follow the natural sequence of theoretical concepts and their application; (3) to enhance students’ motivation through the resolution of actual problems by the application of theoretical concepts they already know; (4) to acquaint the students with the eventual problems they may encounter in positions in companies or institutions in which a quantitative profile is required and, at the same time, to strengthen their CV for their future employability.</p>
+<p>Specifically, weekly sessions (voluntary and additional to the statutory lessons) will be scheduled in which the professor will introduce current problems of remarkable notoriety in the business or institutional sectors, These problems will be solved in a ‘friendly’ way by the application of statistical concepts studied in related courses/subjects. For their resolution, the use of the most commonly used software will be necessary and, thus, an IT classroom is required.</p>
+<p>For the selection of the cases to be solved, a research process has been carried out based on current job offers (LinkedIn, Infojobs, etc.) where the employers’ requirements are related to the resolution of an explicit quantitative case. Among all offers, the most frequent will be chosen, as long as they can be adapted to the students’ knowledge. For their resolution, the software and procedures will be chosen accordingly, keeping the balance between what is required and the appropriateness of the software used in order to solve them.</p>
+<p>The sessions will be structured in four phases. Firstly, with the aim of giving the students the feeling that what they will be learning is real and of particular relevance, the problem will be exposed by showing them the job offers, videos, press notes, documents, etc., in which the interest of the problem is explained. Secondly, professor and students will think about the statistical concepts already learned that could be useful in the resolution of the problem. In this way, students will be part of a recreated business/institution environment and will therefore feel involved in the resolution of the problem. Thirdly, professor and students will work together in solving the problem making use of the adequate tools, thus exploring the link between theory and applicability. Finally, students will present their results, with the aim of recreating a situation as close to reality as possible. These results will be presented orally and as classic and dynamic (Shiny App) reports.</p>
+<p>The aim of this project is to show the students how useful the concepts they are learning actually are, and to develop the capability to use their critic judgment when thinking about the application of such concepts. Additionally, students will hopefully increase their motivation of acquiring a knowledge that will help them in their way into the labor market, both strengthening their quantitative profiles and by having a first glimpse of what they may encounter<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. Furthermore, these sessions will serve as a connecting link among similar subjects, so that students will be able to see the connection and coordination between them and thus find it easier to understand their relationships.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Big Data Specialists are one of the most demanded professions, according to the «XI Informe Los + Buscados en 2016» report, created by Adecco. «The appearing professions are related to data anlytics, statistics and mathematics. Experts in dealing with the amounts of information accumulated in the Big Data cloud are required. Almost all companies have large amounts of data about their clients and users. It is necessary to make use of this information in order to provide a better service » explains the director of Public Policies and Institutional Relationships in Google Spain and Portugal.<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
